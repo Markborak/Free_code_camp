@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+	<!--called declaration it ensures the browser tries to meet industry-wide specifications-->
+
+<html lang = "en">
+
+		<!--lang specifies that the language of the page is english-->
+
+	<head>
+
+		<meta charset = "UTF-8">
+
+		   <!--meta sets the browser behaviour (tells browser to parse the markup into multiple languages)-->
+
+		<title>CatPhotoApp-(my portfolio web)</title>
+
+		    <!--title contains text to be displayed in the browsers Tab-->
+	</head>
+
+	<body>
+		<main><!-- use of main helps with search engine optimization (SEO) and accessibility-->
+
+<h1>CatPhotoApp</h1>
+
+<section>
+  <h2>Cat Photos</h2>
+
+
+<!-- TODO: Add link to cat photos-->
+
+<p>See more <a href = 'https://freecatphotoapp.com'>Cat Photos</a> in our gallery</p>
+
+<a href = 'https://freecatphotoapp.com'>link to cat pictures</a><!--a (anchor) has been used to create a hyperlink has been used with href to link to https://freecatphotoapp.com-->
+
+
+<img src = "https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt = "a cute ornge cat lying on its back"> <!--img is a self-closing tag, src specifies the url image location-->
+
+
+</section> <!--section tag used to separate cat photo content from future content-->
+
+<section>
+	<h2>Cat Lists</h2>
+	<h3>Things Cats love:</h3>
+	<ul><!--unordered list-->
+		<li>milk</li>
+		<li>mice</li>
+		<li>cat nip</li>
+		<li>lasre pointers</li>
+		<li>lasagna</li>
+
+	</ul>
+
+	<figure><!--represents self-contatained content and allows usage of of image with caption-->
+
+	<img src = "https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt = "A slice of lasagna on a plate">
+	  <figcaption>Cats <em>Love</em> Lasagna</figcaption>
+	</figure>
+
+	<h3>Top three things cats hate</h3>
+		<ol><!--ordered list similar to ul exept list is numbered-->
+
+			<li>Fleat treatment</li>
+			<li>Thunder</li>
+			<li>Orther cats</li>
+
+		</ol>
+
+	<figure>
+		<img src = "https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt = "five cats looking around a field">
+		<figcaption>Cats <strong>hate</strong> orther cats</figcaption>
+	</figure>
+
+</section>
+<section>
+
+	<h2>Cat Form</h2>
+	<form action = "https://freecatphotoapp.com/submit-cat-photo"><!-- allows us to take user input action atribute specifies where the form data should be sent -->
+
+	<fieldset>
+
+	    <legend>Is Your Cat an Indoor or Outdoor Cat?</legend>
+		
+		<!--legend acts as a caption for the content in the fieldset element-->
+
+		<label><input type = "radio" id = "indoor" name = "indoor-outdoor" value = "indoor" checked>Indoor</label>
+
+		  <!--adding checked makes the button checked by default-->
+
+		  <!--radio buttons are used when you only want one answer from many options in our case indoor lebel helps to associate the text from input with the input element itself ,,,,id is used to identify specific HTML elements and are different for each element-->
+
+		  <!--giving the radio button the same name makes it possible to prevent selection of both at the same time (selecting one automatically deactivates the orther)-->
+
+		  <!--the value is the data that will be sent during submition from the button if it is selected it is advised to be set similar to the id-->
+
+		<label><input type = "radio" id = "outdoor" name = "indoor-outdoor" value = "outdoor">Outdoor<label/>
+
+
+	</fieldset>
+	
+	         <!--fieldset groups related inputs and labels together-->
+
+	<fieldset>	 
+
+	     <legend>What's your Cats Pearsonality?</legend>
+
+	          <input type = "checkbox" id = "loving" name = "personality" value = "loving" checked>Loving
+
+		  <!--adding a name makes it easier for the browser to process the web form especially if there are multiple checkboxes-->
+
+		  <!--adding checked makes the button checked by default-->
+		  
+	     <label for = "loving"><label/>
+
+		 <!--lebeling using for is just another way of associating an elements text with itself-->
+
+		<input type = "checkbox" id = "lazy" name = "lazy" value = "lazy">Lazy
+
+	     <label for = "lazy"></label>
+
+	        <input type = "checkbox" id = "energetic" name = "energetic" value = "energetic">Energetic
+
+	     <label for = "enrgetic"></label>
+
+	</fieldset>
+
+		<input type = "text" name = "Catphotourl" placeholder = "Cat Photo URL" required><!--of many kinds of inputs using type attribute you can create password fields, reset button or a control to let user select a file from theire computer ,placeholder is used to display certaain text in input field to give people a hint about what kind of information to enter-->
+
+		<button type = "submit">Submit</button>
+	</form>
+</section>
+		</main>
+
+		<footer><p>No Copyright - <b><a href = "https://github.com/Markborak/Free_code_camp">@Mark_Web_Designs</b></a> 2023</p>
+		</footer>
+
+	</body>
+</html>
